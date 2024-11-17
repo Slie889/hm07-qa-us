@@ -13,7 +13,7 @@ const requestBody = {
 test('Status code should be 201', async () => {
     let actualStatusCode;
 	try {
-		const response = await fetch(`${config.API_URL}/api/v1/v1/orders`, {
+		const response = await fetch(`${config.API_URL}/api/v1/orders`, {
 			method: 'POST',
 			headers: {
 			'Content-Type': 'application/json'
