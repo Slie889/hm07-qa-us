@@ -2,10 +2,11 @@
 const config = require('../config');
 
 const requestBody = {
-	"name": "car",
+	"name": "Pizza",
 	"productsList": [
 		{
 		  "id": 19,
+		  "name": "Salami"
 		  "quantity": 2
 		}
 	  ]
