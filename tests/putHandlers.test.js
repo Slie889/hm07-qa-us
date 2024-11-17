@@ -2,12 +2,9 @@
 const config = require('../config');
 
 const requestBody = {
-	"id": 2,
-	"name": "For movies and series",
-	"userId": 2,
 	"productsList": [
 		{
-		  "id": 7,
+		  "id": 19,
 		  "quantity": 1
 		}
 	  ]
@@ -16,7 +13,7 @@ const requestBody = {
 test('Status code should be 200', async () => {
 	let actualStatusCode;
 	try {
-		const response = await fetch(`${config.API_URL}/api/v1/kits/2`, {
+		const response = await fetch(`${config.API_URL}/api/v1/kits/4`, {
 			method: 'PUT',
 			headers: {
 			'Content-Type': 'application/json'
@@ -34,7 +31,7 @@ test('Status code should be 200', async () => {
 test('Response body should contain ......', async () => {
     let actualResponseBody;
 	try {
-		const response = await fetch(`${config.API_URL}/api/v1/kits/2`, {
+		const response = await fetch(`${config.API_URL}/api/v1/kits/4`, {
 			method: 'PUT',
 			headers: {
 			'Content-Type': 'application/json'
