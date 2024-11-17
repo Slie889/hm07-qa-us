@@ -2,10 +2,11 @@
 const config = require('../config');
 
 const requestBody = {
+	"name": "car",
 	"productsList": [
 		{
 		  "id": 19,
-		  "quantity": 1
+		  "quantity": 2
 		}
 	  ]
 }
@@ -43,5 +44,5 @@ test('Response body should contain ......', async () => {
 		console.error(error);
 	}
 
-	expect(actualResponseBody.name).toBe("For movies and series");
+	expect(actualResponseBody["name"]).toBe("Salami");
 });
