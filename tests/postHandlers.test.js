@@ -2,11 +2,9 @@
 const config = require('../config');
 
 const requestBody = {
-	"id": 2,
-	"userid": 1,
 	"productsList": [
 		{
-		  "id": 7,
+		  "id": 3,
 		  "quantity": 1
 		}
 	  ]
@@ -15,7 +13,7 @@ const requestBody = {
 test('Status code should be 201', async () => {
     let actualStatusCode;
 	try {
-		const response = await fetch(`${config.API_URL}/api/v1/kits/2`, {
+		const response = await fetch(`${config.API_URL}/api/v1/v1/orders/1`, {
 			method: 'POST',
 			headers: {
 			'Content-Type': 'application/json'
@@ -33,7 +31,7 @@ test('Status code should be 201', async () => {
 test('Response body should contain ......', async () => {
     let actualResponseBody;
 	try {
-		const response = await fetch(`${config.API_URL}/api/v1/kits/2`, {
+		const response = await fetch(`${config.API_URL}/api/v1/orders/1`, {
 			method: 'POST',
 			headers: {
 			'Content-Type': 'application/json'
@@ -45,5 +43,5 @@ test('Response body should contain ......', async () => {
 		console.error(error);
 	}
 
-	expect(actualResponseBody.name).toBe("For movies and series");
+	expect(actualResponseBody["courierService"]).toBe("Order and Go");
 });
