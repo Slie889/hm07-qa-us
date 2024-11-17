@@ -21,5 +21,5 @@ test('Body should contain......', async () => {
 	} catch (error) {
 	    console.error(error);
 	}
-	expect(actualResponseBody.name).toBe("Pepsi Soft Drink");
+	expect(actualResponseBody.courierService).toBe("Order and Go");
 });
