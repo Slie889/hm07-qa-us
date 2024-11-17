@@ -44,5 +44,5 @@ test('Response body should contain ......', async () => {
 		console.error(error);
 	}
 
-	expect(actualResponseBody["name"]).toBe("Salami");
+	expect(actualResponseBody["name"]).toBe("Pizza");
 });
