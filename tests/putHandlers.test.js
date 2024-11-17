@@ -4,8 +4,8 @@ const config = require('../config');
 const requestBody = {
 	"productsList": [
 		{
-		  "id": 19,
-		  "quantity": 2
+		  "id": 3,
+		  "quantity": 1
 		}
 	  ]
 }
