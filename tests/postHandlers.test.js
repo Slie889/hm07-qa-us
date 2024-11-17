@@ -6,7 +6,7 @@ const requestBody = {
 	"userid": 1,
 	"productsList": [
 		{
-		  "id": 61,
+		  "id": 7,
 		  "quantity": 1
 		}
 	  ]
@@ -45,5 +45,5 @@ test('Response body should contain ......', async () => {
 		console.error(error);
 	}
 
-	expect(actualResponseBody["name"]).toBe("For movies and series");
+	expect(actualResponseBody.name).toBe("For movies and series");
 });
