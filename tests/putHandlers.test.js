@@ -3,7 +3,8 @@ const config = require('../config');
 
 const requestBody = {
 	"id": 2,
-	"userId": 1,
+	"name": "For movies and series",
+	"userId": 2,
 	"productsList": [
 		{
 		  "id": 7,
@@ -45,5 +46,5 @@ test('Response body should contain ......', async () => {
 		console.error(error);
 	}
 
-	expect(actualResponseBody.name).toBe("Tastes of Paris");
+	expect(actualResponseBody.name).toBe("For movies and series");
 });
