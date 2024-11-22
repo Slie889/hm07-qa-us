@@ -10,8 +10,6 @@ const requestBody = {
 	  ]
 }
 	
-	
-
 test('Status code should be 200', async () => {
 	let actualStatusCode;
     try {
