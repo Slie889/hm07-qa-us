@@ -23,7 +23,7 @@ test('Response body should contain ......', async () => {
     let actualResponseBody;
 	try {
 		const response = await fetch(`${config.API_URL}/api/v1/orders`, {
-			method: 'POST',
+			method: 'DELETE',
 			headers: {
 			'Content-Type': 'application/json'
 			},
@@ -34,5 +34,5 @@ test('Response body should contain ......', async () => {
 		console.error(error);
 	}
 
-	expect(actualResponseBody["courierService"]).toBe("Order and Go");
+	expect(actualResponseBody["name"]).toBe("For Picnic");
 });
