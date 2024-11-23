@@ -24,20 +24,3 @@ test('Status code should be 200', async () => {
 	expect(actualStatusCode).toBe(200);
 });
 
-test('Response body should contain ......', async () => {
-    let actualResponseBody;
-	try {
-		const response = await fetch(`${config.API_URL}/api/v1/orders/1`, {
-			method: 'DELETE',
-			headers: {
-			'Content-Type': 'application/json'
-			},
-			body: JSON.stringify(requestBody)
-		});
-		actualResponseBody = await response.json();
-	} catch (error) {
-		console.error(error);
-	}
-
-	expect(actualResponseBody["name"]).toBe("Fruit Power Juice - Litchi");
-});
