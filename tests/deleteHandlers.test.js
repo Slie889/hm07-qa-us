@@ -2,13 +2,14 @@
 const config = require('../config');
 
 const requestBody = {
-	"id": 1
+	"id": 3,
+	"name": "My Set"
 	}
 	
 test('Status code should be 200', async () => {
 	let actualStatusCode;
     try {
-		const response = await fetch(`${config.API_URL}/api/v1/orders`, {
+		const response = await fetch(`${config.API_URL}/api/v1/kits/2/products`, {
 			method: 'DELETE',
 		});
 		actualStatusCode = response.status;
@@ -22,7 +23,7 @@ test('Status code should be 200', async () => {
 test('Response body should contain ......', async () => {
     let actualResponseBody;
 	try {
-		const response = await fetch(`${config.API_URL}/api/v1/orders`, {
+		const response = await fetch(`${config.API_URL}/api/v1/kits/2/products`, {
 			method: 'DELETE',
 			headers: {
 			'Content-Type': 'application/json'
