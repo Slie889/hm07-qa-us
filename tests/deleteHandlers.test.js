@@ -3,7 +3,13 @@ const config = require('../config');
 
 const requestBody = {
 	"id": 5,
-	}
+	"productsList": [
+		{
+		  "id": 5,
+		  "quantity": 1
+		}
+	  ]
+}
 	
 test('Status code should be 200', async () => {
 	let actualStatusCode;
