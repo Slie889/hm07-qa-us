@@ -14,7 +14,7 @@ const requestBody = {
 test('Status code should be 200', async () => {
 	let actualStatusCode;
     try {
-		const response = await fetch(`${config.API_URL}/api/v1/orders/1`, {
+		const response = await fetch(`${config.API_URL}/api/v1/orders/5`, {
 			method: 'DELETE',
 		});
 		actualStatusCode = response.status;
