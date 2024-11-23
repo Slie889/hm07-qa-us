@@ -14,7 +14,7 @@ const requestBody = {
 test('Status code should be 200', async () => {
 	let actualStatusCode;
     try {
-		const response = await fetch(`${config.API_URL}/api/v1/orders/${cartId}`, {
+		const response = await fetch(`${config.API_URL}/api/v1/orders/${1}`, {
 			method: 'DELETE',
 		});
 		actualStatusCode = response.status;
@@ -28,7 +28,7 @@ test('Status code should be 200', async () => {
 test('Response body should contain ......', async () => {
     let actualResponseBody;
 	try {
-		const response = await fetch(`${config.API_URL}/api/v1/orders/${cardId}`, {
+		const response = await fetch(`${config.API_URL}/api/v1/orders/${1}`, {
 			method: 'DELETE',
 			headers: {
 			'Content-Type': 'application/json'
