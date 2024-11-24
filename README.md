@@ -1,10 +1,10 @@
 Urban Grocers Server Testing Project
 
-About The Project
+A. About The Project
 Complete the following 4 tasks below. Put the tests to the appropriate files in the Tests folder using the templates provided. Use a variable from config.js as your API endpoint. 
 
 
-Task
+B. Task
 Task 1: Tests for GET requests
 For the first task, we need to select one endpoint from the Urban Grocers documentation and write at least two tests:
 - Check the response status code
@@ -26,7 +26,7 @@ For the first task, we need to select one endpoint from the Urban Grocers docume
 - Parse the response and check that the response body contains the expected data
 
 
-SET UP
+C. SET UP
 Connecting with Git and GitHub on this project. There are 2 steps below to set up the project;
 Step 1: Connect with GitHub
 The first step is to link GitHub account to the TripleTen. To do so, click the "Link GitHub account" button in the widget at the top of this page. This will take you to a new browser tab where you will be asked to confirm that you want to link your GitHub account. If you're not signed in to the GitHub already, you'll be asked to enter username and password. Upon confirming your TripleTen profile will be connected to your GitHub profile via GitHub's secure API. 
@@ -48,7 +48,7 @@ Once you have linked your TripleTen account with the GitHub, a repository will b
  You can open the project folder on you computer. Please run npm install from the console in your project folder and using Visual Studio Code. In the config.js, replace the API URL with the unique link generated after launch of Urban Grocers server. When you're ready to start working, hit the "Start server" button to get your server URL.       
 
 
-Server
+D. Server
 
 Server address: https://cnt-ca1fc525-c5e8-44e0-9ef3-6b9e8ebae740.containerhub.tripleten-services.com/api/swagger     
 
