@@ -2,10 +2,10 @@
 const config = require('../config');
 
 const requestBody = {
-	"id": 1,
+	"id": 6,
 	"productsList": [
 		{
-		  "id": 5,
+		  "id": 6,
 		  "quantity": 1
 		}
 	  ]
@@ -14,7 +14,7 @@ const requestBody = {
 test('Status code should be 200', async () => {
 	let actualStatusCode;
     try {
-		const response = await fetch(`${config.API_URL}/api/v1/orders/${1}`, {
+		const response = await fetch(`${config.API_URL}/api/v1/orders/${6}`, {
 			method: 'DELETE',
 		});
 		actualStatusCode = response.status;
@@ -28,7 +28,7 @@ test('Status code should be 200', async () => {
 test('Response body should contain ......', async () => {
     let actualResponseBody;
 	try {
-		const response = await fetch(`${config.API_URL}/api/v1/orders/${1}`, {
+		const response = await fetch(`${config.API_URL}/api/v1/orders/${6}`, {
 			method: 'DELETE',
 			headers: {
 			'Content-Type': 'application/json'
