@@ -2,12 +2,8 @@
 const config = require('../config');
 
 const requestBody = {
-	"productsList": [
-		{
-		  "id": 4,
-		  "quantity": 1
-		}
-	  ]
+	"name": "Testing",
+	"cardId": 1 
 }
 
 test('Status code should be 201', async () => {
@@ -43,5 +39,5 @@ test('Response body should contain ......', async () => {
 		console.error(error);
 	}
 
-	expect(actualResponseBody["courierService"]).toBe("Order and Go");
+	expect(actualResponseBody["name"]).toBe("Testing");
 });
