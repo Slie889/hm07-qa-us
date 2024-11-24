@@ -39,5 +39,5 @@ test('Response body should contain ......', async () => {
 		console.error(error);
 	}
 
-	expect(actualResponseBody["ok"]).toBe("true");
+	expect(actualResponseBody["ok"]).toBe(true);
 });
